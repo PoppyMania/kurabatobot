@@ -253,5 +253,4 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
 
 
 
-
 bot.run(token)
