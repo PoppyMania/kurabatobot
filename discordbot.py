@@ -110,7 +110,7 @@ async def janken(ctx):
     await ctx.send(choice)
         
         # プリコネキャラ
-class PrGif(commands.Cog, name = 'スキルモーション'):
+class SkillMotionGIF(commands.Cog):
 
     def __init__(self, bot):
         super().__init__()
