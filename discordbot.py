@@ -115,6 +115,9 @@ class SkillMotionGIF(commands.Cog):
     def __init__(self, bot):
         super().__init__()
         self.bot = bot
+        self.no_category = "スキルモーション"
+
+
     @bot.command()
     async def kurisu(ctx):
         """クリス"""
