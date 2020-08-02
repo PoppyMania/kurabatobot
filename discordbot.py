@@ -12,103 +12,7 @@ bot = commands.Bot(command_prefix=prefix)
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
-@bot.command()
-async def jantama(ctx):
-    """じゃんたま公式HP"""
-    await ctx.send('https://game.mahjongsoul.com/')
-    await ctx.message.delete()
-@bot.command()
-async def dbd(ctx):
-    """DbDストアページ"""
-    await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
-    await ctx.message.delete()
-@bot.command()
-async def pubg(ctx):
-    """pubuストアページ"""
-    await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
-    await ctx.message.delete()
-@bot.command()
-async def patora(ctx):
-    """周防パトラ"""
-    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST') 
-    await ctx.message.delete()
-@bot.command()
-async def suzuhara(ctx):
-    """鈴原るる"""
-    await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
-    await ctx.message.delete()
-@bot.command()
-async def syaruru(ctx):
-    """しゃるる"""
-    await ctx.send('https://www.twitch.tv/syaruru3 \n https://www.youtube.com/channel/UC5SYDKMBeExdFs0ocWiK6xw')
-    await ctx.message.delete()
-@bot.command()
-async def pekorakopipe(ctx):
-    """ぺこらコピペ"""
-    await ctx.send('ぺこーらいつもありがとう！ \n 最近ぺこーらへ感謝するのが日課になりつつあります！ \n 単刀直入に我慢してたこと書いちゃう！ \n ぺこーら愛してるぞおおおお \n (ps.厄介野うさぎだと思われてそうですがが長文赤スパ失礼！ \n ちなみに読まれてる頃にはあまりの恥ずかしさにユニバーサル大回転ぺこぺこの舞₍ ◝(‘ω’)◟ ⁾⁾₍₍ ◝(‘ω’)◜ ₎₎しながらベットの上で暴れてると思うので率直な一言貰ってもいいですか？w  \n 最後に一言！配信をはじめ本当にいつもありがとう！！！ \n 野うさぎ達を大切に思ってくれてる姿勢冗談抜きで本当に好きです。 \n 応援するしがいがあります！') 
-    await ctx.message.delete()
-@bot.command()
-async def l4d2(ctx):
-    """l4d2ストアページ"""
-    await ctx.send('https://store.steampowered.com/app/550/Left_4_Dead_2/')
-    await ctx.message.delete()
-@bot.command()
-async def kogatan(ctx):
-    """月岡恋鐘フィギュア"""
-    await ctx.send('月岡恋鐘フィギュアが予約開始！予約はこちらから！↓↓↓ \n https://www.goodsmile.info/ja/product/9770/%E6%9C%88%E5%B2%A1%E6%81%8B%E9%90%98+%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%AA%E3%83%96%E3%83%88%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BCVer.html')
-    await ctx.message.delete()
-@bot.command()
-async def ow(ctx):
-    """クソゲ"""
-    await ctx.send('https://playoverwatch.com/ja-jp/')
-    await ctx.message.delete()
-@bot.command()
-async def apex(ctx):
-    """apex公式"""
-    await ctx.send('https://www.ea.com/ja-jp/games/apex-legends') 
-    await ctx.message.delete()
-@bot.command()
-async def kaya(ctx):
-    """ドラゴンズエンドフィ.gif"""
-    await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
-    await ctx.message.delete()     
-@bot.command()
-async def nyaru(ctx):
-    """ニューイヤーバースト"""
-    await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
-    await ctx.message.delete()
-@bot.command()
-async def bga(ctx):
-    """ボードゲームアリーナ"""
-    await ctx.send('https://ja.boardgamearena.com/')
-    await ctx.message.delete()
-@bot.command()
-async def swb(ctx):
-    """サマーウルフェンブリッツ.gif"""
-    await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
-    await ctx.message.delete()
-@bot.command()
-async def yabaiwayo(ctx):
-    """ヤバいわよ.gif"""
-    await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
-    await ctx.message.delete()
-    
-@bot.command()
-async def uranai(ctx):
-    """占い"""
-    #レスポンスされる運勢のリストを作成
-    unsei = ["大吉", "中吉", "吉", "末吉", "小吉", "凶", "大凶"]
-    choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
-    await ctx.send(choice)
 
-@bot.command()
-async def janken(ctx):
-    """じゃんけん"""
-    #レスポンスされる運勢のリストを作成
-    janken = ["グー", "チョキ", "パー"]
-    choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
-    await ctx.send(choice)
-        
         # プリコネキャラ
 class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
 
@@ -248,18 +152,134 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
         await ctx.send('https://gyazo.com/84891d66caf2de0092a9041020d9145e')
         await ctx.message.delete()  
 
-@bot.command()
-async def motikosi(ctx, boss: int, p1: int, p2: int):
-    """持越し時間計算機 /motikosi (ボス体力) (もう一人の与ダメージ) (自分の与ダメージ)"""
-    total = p1 + p2
-    if total > boss and p1 < boss and p2 < boss:
-        cotime = 90 - (90*(boss-p1)/p2) + 20
-        text = "持ち越し時間は" + str(cotime) + "秒です"       
-    else:
-        text = "持ち越しは発生しません"
-    await ctx.send(text)
+
+class DamageCalc(commands.Cog, name = '持ち越し計算機'):
+
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
+
+    @bot.command()
+    async def motikosi(ctx, boss: int, p1: int, p2: int):
+        """持越し時間計算機 /motikosi (ボス体力) (もう一人の与ダメージ) (自分の与ダメージ)"""
+        total = p1 + p2
+        if total > boss and p1 < boss and p2 < boss:
+            cotime = 90 - (90*(boss-p1)/p2) + 20
+            text = "持ち越し時間は" + str(cotime) + "秒です"       
+        else:
+            text = "持ち越しは発生しません"
+        await ctx.send(text)
 
 
+class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
+
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
+
+    @bot.command()
+    async def jantama(ctx):
+        """じゃんたま公式HP"""
+        await ctx.send('https://game.mahjongsoul.com/')
+        await ctx.message.delete()
+    @bot.command()
+    async def dbd(ctx):
+        """DbDストアページ"""
+        await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
+        await ctx.message.delete()
+    @bot.command()
+    async def pubg(ctx):
+        """pubuストアページ"""
+        await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
+        await ctx.message.delete()
+    @bot.command()
+    async def patora(ctx):
+        """周防パトラ"""
+        await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST') 
+        await ctx.message.delete()
+    @bot.command()
+    async def suzuhara(ctx):
+        """鈴原るる"""
+        await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
+        await ctx.message.delete()
+    @bot.command()
+    async def syaruru(ctx):
+        """しゃるる"""
+        await ctx.send('https://www.twitch.tv/syaruru3 \n https://www.youtube.com/channel/UC5SYDKMBeExdFs0ocWiK6xw')
+        await ctx.message.delete()
+    @bot.command()
+    async def pekorakopipe(ctx):
+        """ぺこらコピペ"""
+        await ctx.send('ぺこーらいつもありがとう！ \n 最近ぺこーらへ感謝するのが日課になりつつあります！ \n 単刀直入に我慢してたこと書いちゃう！ \n ぺこーら愛してるぞおおおお \n (ps.厄介野うさぎだと思われてそうですがが長文赤スパ失礼！ \n ちなみに読まれてる頃にはあまりの恥ずかしさにユニバーサル大回転ぺこぺこの舞₍ ◝(‘ω’)◟ ⁾⁾₍₍ ◝(‘ω’)◜ ₎₎しながらベットの上で暴れてると思うので率直な一言貰ってもいいですか？w  \n 最後に一言！配信をはじめ本当にいつもありがとう！！！ \n 野うさぎ達を大切に思ってくれてる姿勢冗談抜きで本当に好きです。 \n 応援するしがいがあります！') 
+        await ctx.message.delete()
+    @bot.command()
+    async def l4d2(ctx):
+        """l4d2ストアページ"""
+        await ctx.send('https://store.steampowered.com/app/550/Left_4_Dead_2/')
+        await ctx.message.delete()
+    @bot.command()
+    async def kogatan(ctx):
+        """月岡恋鐘フィギュア"""
+        await ctx.send('月岡恋鐘フィギュアが予約開始！予約はこちらから！↓↓↓ \n https://www.goodsmile.info/ja/product/9770/%E6%9C%88%E5%B2%A1%E6%81%8B%E9%90%98+%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%AA%E3%83%96%E3%83%88%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BCVer.html')
+        await ctx.message.delete()
+    @bot.command()
+    async def ow(ctx):
+        """クソゲ"""
+        await ctx.send('https://playoverwatch.com/ja-jp/')
+        await ctx.message.delete()
+    @bot.command()
+    async def apex(ctx):
+        """apex公式"""
+        await ctx.send('https://www.ea.com/ja-jp/games/apex-legends') 
+        await ctx.message.delete()
+    @bot.command()
+    async def kaya(ctx):
+        """ドラゴンズエンドフィ.gif"""
+        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
+        await ctx.message.delete()     
+    @bot.command()
+    async def nyaru(ctx):
+        """ニューイヤーバースト"""
+        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
+        await ctx.message.delete()
+    @bot.command()
+    async def bga(ctx):
+        """ボードゲームアリーナ"""
+        await ctx.send('https://ja.boardgamearena.com/')
+        await ctx.message.delete()
+    @bot.command()
+    async def swb(ctx):
+        """サマーウルフェンブリッツ.gif"""
+        await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
+        await ctx.message.delete()
+    @bot.command()
+    async def yabaiwayo(ctx):
+        """ヤバいわよ.gif"""
+        await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
+        await ctx.message.delete()
+
+
+class Game(commands.Cog, name = '遊んであげて'):
+
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
+
+    @bot.command()
+    async def uranai(ctx):
+        """占い"""
+        #レスポンスされる運勢のリストを作成
+        unsei = ["大吉", "中吉", "吉", "末吉", "小吉", "凶", "大凶"]
+        choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
+        await ctx.send(choice)
+
+    @bot.command()
+    async def janken(ctx):
+        """じゃんけん"""
+        #レスポンスされる運勢のリストを作成
+        janken = ["グー", "チョキ", "パー"]
+        choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
+        await ctx.send(choice)
 
 
 
