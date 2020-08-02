@@ -280,9 +280,9 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await ctx.send(choice)
 
 bot = commands.Bot(command_prefix=prefix)
-bot.add_cog(SkillMotionGIF(commands=commands))
-bot.add_cog(DamageCalc(commands=commands))
-bot.add_cog(BestUrl(commands=commands))
-bot.add_cog(Game(commands=commands))
+bot.add_cog(SkillMotionGIF(bot=bot))
+bot.add_cog(DamageCalc(bot=bot))
+bot.add_cog(BestUrl(bot=bot))
+bot.add_cog(Game(bot=bot))
 
 bot.run(token)
