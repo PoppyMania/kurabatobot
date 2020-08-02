@@ -259,7 +259,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.message.delete()
 
 
-class Game(commands.Cog, name = '遊んであげて'):
+class Game(commands.Cog, name = 'おもちゃ'):
 
     def __init__(self, bot):
         super().__init__()
@@ -282,6 +282,9 @@ class Game(commands.Cog, name = '遊んであげて'):
         await ctx.send(choice)
 
 
-
+bot.add_cog(SkillMotionGIF(bot=bot))
+bot.add_cog(DamageCalc(bot=bot))
+bot.add_cog(BestUrl(bot=bot))
+bot.add_cog(Game(bot=bot))
 
 bot.run(token)
